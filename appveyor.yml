@@ -22,4 +22,4 @@ test_script:
     - npm test
 
   # dont actually build
-
+build: false
