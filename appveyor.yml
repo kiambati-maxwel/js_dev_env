@@ -21,5 +21,6 @@ test_script:
   # run tests
     - npm test
 
-  # dont acctually build
-  build: off
+  # dont actually build
+
+  build: on
