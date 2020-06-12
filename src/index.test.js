@@ -15,7 +15,7 @@ describe('index.html', () => {
         const index = fs.readFileSync('./src/index.html', "utf-8");
         jsdom.env(index, function(err, window){
             const h1 = window.document.querySelector('h1');
-            expect(h1.innerHTML).to.equal("hey love na code");
+            expect(h1.innerHTML).to.equal("hey love na code !");
             done();
             window.close();
         });
