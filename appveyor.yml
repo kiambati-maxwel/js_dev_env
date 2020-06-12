@@ -23,4 +23,3 @@ test_script:
 
   # dont actually build
 
-  build: on
