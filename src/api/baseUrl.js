@@ -2,9 +2,9 @@
 //     const inDevelopment = window.location.hostname === 'localhost';
 //     return inDevelopment ? 'http://localhost:3001/' : "/" ;
 // }
-
+/* eslint-disable no-console */
 export default function getBaseUrl(){
-    return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001' : '/';
+    return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001/' : '/';
 }
 
 function getQueryStringParameterByName(name, url){
@@ -15,6 +15,7 @@ function getQueryStringParameterByName(name, url){
 
     if(!result) return null;
     if(!result[2]) return '';
-
+    console.log(decodeURIComponent(result[2].replace[/\+/g, " "]))
     return decodeURIComponent(result[2].replace[/\+/g, " "]);
+
 }

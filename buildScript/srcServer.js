@@ -27,33 +27,33 @@ app.get('/users', (req, res) => {
 
     res.json([{
             "id": 1,
-            "firstName": "Perly",
-            "lastName": "wanjiku",
-            "emailAdress": "perly@gmail.com"
+            "firstName": "Theon",
+            "lastName": "catMEl",
+            "email": "catMEl@save.net"
         },
         {
             "id": 2,
-            "firstName": "Perly",
-            "lastName": "wanjiku",
-            "emailAdress": "perly@gmail.com"
+            "firstName": "sebrina",
+            "lastName": "craig",
+            "emai": "craig@yahoo.com"
         },
         {
             "id": 3,
             "firstName": "tom",
             "lastName": "richard",
-            "emailAdress": "tom@gmail.com"
+            "email": "tom@gmail.com"
         },
         {
             "id": 4,
             "firstName": "Perly",
             "lastName": "wanjiku",
-            "emailAdress": "perly@gmail.com"
+            "email": "perlyKiambati@silicon.io"
         },
         {
             "id": 5,
-            "firstName": "Perly",
+            "firstName": "diana",
             "lastName": "wanjiku",
-            "emailAdress": "perly@gmail.com"
+            "email": "shiku99@gmail.com"
         }
     ]);
 

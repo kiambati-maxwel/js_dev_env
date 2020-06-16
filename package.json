@@ -15,7 +15,11 @@
     "watch:test": "npm run test -- --watch",
     "generate-mock-data": "babel-node buildScript/generateMockData.js",
     "prestart-mockapi": "npm run generate-mock-data",
-    "start-mockapi": "json-server --watch src/api/db.json --port 3001"
+    "start-mockapi": "json-server --watch src/api/db.json --port 3001",
+    "clean-dist": "rimraf ./dist && mkdir dist",
+    "prebuild": "npm-run-all clean-dist test lint",
+    "build": "babel-node buildScript/build.js",
+    "postbuild": "babel-node buildScript/distServer.js"
   },
   "author": "Cory House",
   "license": "MIT",
@@ -38,7 +42,7 @@
     "eslint-plugin-import": "^2.21.2",
     "eslint-watch": "2.1.14",
     "express": "^4.17.1",
-    "extract-text-webpack-plugin": "1.0.1",
+    "extract-text-webpack-plugin": "^1.0.1",
     "faker": "^4.1.0",
     "html-webpack-plugin": "2.22.0",
     "jsdom": "9.8.0",
