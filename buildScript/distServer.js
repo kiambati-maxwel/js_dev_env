@@ -18,42 +18,42 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
-app.get('/users', (req, res) => {
-    // simplicity 101
+// app.get('/users', (req, res) => {
+//     // simplicity 101
 
-    res.json([{
-            "id": 1,
-            "firstName": "Theon",
-            "lastName": "catMEl",
-            "email": "catMEl@save.net"
-        },
-        {
-            "id": 2,
-            "firstName": "sebrina",
-            "lastName": "craig",
-            "emai": "craig@yahoo.com"
-        },
-        {
-            "id": 3,
-            "firstName": "tom",
-            "lastName": "richard",
-            "email": "tom@gmail.com"
-        },
-        {
-            "id": 4,
-            "firstName": "Perly",
-            "lastName": "wanjiku",
-            "email": "perlyKiambati@silicon.io"
-        },
-        {
-            "id": 5,
-            "firstName": "diana",
-            "lastName": "wanjiku",
-            "email": "shiku99@gmail.com"
-        }
-    ]);
+//     res.json([{
+//             "id": 1,
+//             "firstName": "Theon",
+//             "lastName": "catMEl",
+//             "email": "catMEl@save.net"
+//         },
+//         {
+//             "id": 2,
+//             "firstName": "sebrina",
+//             "lastName": "craig",
+//             "emai": "craig@yahoo.com"
+//         },
+//         {
+//             "id": 3,
+//             "firstName": "tom",
+//             "lastName": "richard",
+//             "email": "tom@gmail.com"
+//         },
+//         {
+//             "id": 4,
+//             "firstName": "Perly",
+//             "lastName": "wanjiku",
+//             "email": "perlyKiambati@silicon.io"
+//         },
+//         {
+//             "id": 5,
+//             "firstName": "diana",
+//             "lastName": "wanjiku",
+//             "email": "shiku99@gmail.com"
+//         }
+//     ]);
 
-});
+// });
 
 app.listen(port, err => {
     if (err) {

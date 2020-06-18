@@ -64,6 +64,6 @@ app.listen(port, err => {
         console.log(err);
     } else {
         open(`http://localhost:${port}`);
-        console.log(chalk.blue(`app running on portp ${port}`));
+        console.log(chalk.blue(`app running on port ${port} :`));
     }
 });
