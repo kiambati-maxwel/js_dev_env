@@ -1,6 +1,8 @@
 /* eslint-disable no-console */
 /* eslint-disable no-debugger */
 /* eslint-disable no-unused-vars */
+import './index.css';
+
 import {
     getUsers,
     deleteUser

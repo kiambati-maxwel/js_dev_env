@@ -186,9 +186,14 @@
 >>  ``` github react-slingshot ```
 
 
+## Error logging
+       track js service
 
+# production deployment
 
-
+       ` Separate UI and API
+           ` > Heroku
+             ` > Serge
 
 
 
